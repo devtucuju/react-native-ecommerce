@@ -1,6 +1,9 @@
 import React from "react";
 import {View,Text, StyleSheet} from "react-native";
 import Responsive from 'react-native-lightweight-responsive';
+
+import { Button } from "../../../components/Forms/Button";
+import { SocialButton } from "../../../components/Forms/SocialButton";
 import { Input } from "../../../components/Forms/Input";
 
 import theme from "../../../globals/styles/theme"
@@ -18,7 +21,22 @@ return (
       <Input
    
      />
+     <Button title="Entrar"/>
+     <View style={styles.social}>
+     <Text style={styles.subTitle}>ou acesse com suas redes sociais</Text>
      </View>
+     
+     <View style={styles.social}>
+     <SocialButton title="Twitter"/>
+     <SocialButton title="Facebook"/>
+     </View>
+     <View style={styles.social}>
+     <Text style={styles.subTitle}>Não tem conta?</Text>
+     <Text style={styles.inputTitle}>Criar conta</Text>
+     </View>
+     </View>
+     
+    
     </View>
 )
 }
@@ -26,27 +44,44 @@ return (
 const styles = StyleSheet.create({
     container:{
         flex:1,
-justifyContent :"center",
+
 alignItems: "center",
+justifyContent :"center",
 
 
     },
 title:{
     fontSize:Responsive.font(26),
     color:theme.colors.title,
+    fontWeight:"bold"
+ 
+
+},
+subTitle:{
+    fontSize:Responsive.font(14),
+    color:theme.colors.subtitle,
+   
  
 
 },
 inputTitle:{
     fontSize:Responsive.font(14),
-    color:theme.colors.primary
+    color:theme.colors.primary,
+    fontWeight:"bold"
     ,
 },
 form:{
-    flex: 1,
+    
     width: "100%",
     justifyContent :"center",
+
     padding: Responsive.font(24)
+},
+social:{
+  
+    flexDirection:"row",
+    justifyContent :"space-between",
+ 
 }
 }
 )

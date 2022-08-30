@@ -24,7 +24,7 @@ paddingBottom:Responsive.font(2),
 fontSize:Responsive.font(13),
 borderBottomWidth:  Responsive.font(1),
 borderColor: theme.colors.primary,
-marginBottom:Responsive.font(30)
+marginBottom:Responsive.font(16)
     
         },
     

@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="./assets/logo-unifapdigital.jpeg" alt="Ecommerce" width="400">
+  <img src="./assets/logo-unifapdigital.jpeg" alt="Ecommerce" width="200"  height="200">
 <br>
 <br>
 React Native Application for Ecommerce
@@ -26,13 +26,16 @@ React Native Application for Ecommerce
 </p>
 
 [//]: # (Add your gifs/images here:)
-<center>
-  <img src="./assets/01-ecommerce.png" alt="ecommerce" width="275" height="450"  >
+<div  style="
+display:grid;
+grid-template-columns: 250px 250px 250px;
+gap:10px
+" >
   <img src="./assets/02-ecommerce.png" alt="ecommerce" width="250"  height="450" >
   <img src="./assets/03-ecommerce.png" alt="ecommerce" width="250"  height="450" >
   <img src="./assets/04-ecommerce.png" alt="ecommerce" width="250" height="450"  >
   <img src="./assets/05-ecommerce.png" alt="ecommerce" width="250" height="450"  >
-</center>
+</div>
 
 
 <hr />
